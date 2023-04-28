@@ -3,11 +3,10 @@
 ## Layout
 
 ### Desktop
-- 
+- largura maxima: 
 
 ### Mobile
-- 
-
+-
 
 ## Colors
 
@@ -26,7 +25,7 @@
 - Font size: (tamanho da fonte)
 
 ### Body
-- Font size: (tamanho da fonte)
+- Font size: 16px
 
 
 ### Font
