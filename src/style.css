@@ -9,7 +9,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-img{
+
+img {
   display: block;
   width: 100%;
 }
@@ -17,6 +18,7 @@ img{
 .navbar {
   position: fixed;
   width: 100%;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,7 +50,7 @@ img{
 }
 
 .menu li {
-  padding: 4px 16px;  
+  padding: 4px 16px;
 }
 
 .nav-btns {
@@ -88,12 +90,125 @@ input[type=checkbox] {
   user-select: none;
 }
 
+.hero-section {
+  padding-top: 75px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #003F5D;
+  color: #FFFFFF;
+}
+
+.hero__texts {
+  padding-top: 32px;
+  max-width: 1440px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero__texts>.hero--title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.hero--title>span {
+  color: #FFCC00;
+}
+
+.hero--description {
+  font-size: 1.5rem;
+}
+
+.hero--buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0rem;
+  gap: 4rem;
+}
+
+.hero--buttons>.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .35s ease-in;
+  font-weight: 700;
+  border: #FFCC00;
+}
+
+.hero--buttons>.btn:nth-of-type(1) {
+  background-color: #FFCC00;
+  color: black;
+}
+
+.hero--buttons>.btn:nth-of-type(2) {
+  background-color: transparent;
+  border: 1px solid #FFCC00;
+  color: #FFFFFF;
+}
+
+
+.hero--buttons>.btn:hover {
+  transform: scale(1.1);
+}
+
+.hero__services {
+  width: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.services-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.services-metrics{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 32px;
+}
+
+.services-metrics > .metrics-card{
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.metrics-card > .metrics-quant{
+  font-size: 3rem;
+}
+
+.banner__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
 
 @media (max-width: 768px) {
-  .logo{
+  .navbar {
+    height: 50px;
+  }
+
+  .logo {
     width: 100px;
   }
-  
+
   .menu {
     display: none;
     position: absolute;
@@ -130,6 +245,12 @@ input[type=checkbox] {
   .nav-btn-container {
     margin-top: 100px;
   }
+
+  .hero-section {
+    margin-top: 50px;
+  }
+
+
 
   input[type=checkbox]:checked~.menu {
     display: flex;
