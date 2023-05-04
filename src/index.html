@@ -7,49 +7,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 
-  <title></title>
-  
+  <title>Skill Up</title>
+
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <ul class="navbar__menu">
-        <li class="menu--items"><a href="#">Home</a></li>
-        <li class="menu--items"><a href="#sobre">Sobre</a></li>
-        <li class="menu--items"><a href="#cursos">Cursos</a></li>
-        <li class="menu--items"><a href="#precos">Precos</a></li>
-        <li class="menu--items"><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <div class="container">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./Assets/svg/logo.svg" alt="">
+    </div>
 
-    <section id="home" class="section">
-      <!--sessão de banner-->
-    </section>
+    <ul class="nav-links">
 
-    <section id="about" class="section">
-      <!--sessão sobre a empresa-->
-    </section>
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
-    <section id="course" class="section">
-      <!--sessão de categorias dos cursos-->
-    </section>
+      <div class="menu">
+        
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Sobre</a></li>
 
-    <section id="prices" class="section">
-      <!--sessão se preços de assinaturas-->
-    </section>
+        <li><a href="/">Cursos</a></li>
 
-    <section id="contact" class="section">
-      <!--sessão de contactos-->
-    </section>
+        <li><a href="/">Preços</a></li>
+        <li><a href="/">Contacto</a></li>
+        <div>
+          <li class=" nav-btns-mobile">
+            <a class="nav-btns" href="/">Entrar</a>
+            <a class="nav-btns" href="/">Cadastrar</a>
+          </li>
+        </div>
 
-    <footer>
-      <!--sessão de rodapé-->
-    </footer>
+      </div>
+    </ul>
+
+    <div class="nav btns nav-btns-desktop">
+      <a class="nav-btns" href="/">Entrar</a>
+      <a class="nav-btns" href="/">Cadastrar</a>
+    </div>
+
+  </nav>
+
+  <div class="hero section">
+    <!-- sessão de banner -->
+    <div class="hero__container1">
+
+      <div class="hero__texts">
+        <p class="hero--title">
+          O próximo passo da sua carreira no mercado de trabalho começa aqui!
+        </p>
+        <p class="hero--description">
+          Ganhe tempo com aulas dinâmicas para assistir de qualquer lugar e receba certificados para turbinar o seu
+          currículo.
+        </p>
+      </div>
+
+      <div class="hero--buttons">
+        <button class="btn btn-primary">Matricule-se!</button>
+        <button class="btn">Contacto</button>
+      </div>
+
+    </div>
+
+    <div class="hero__services">
+
+      <div class="hero--card">
+        <div class="services__cards">
+          <img src="" alt="">
+          <p>Mentoria</p>
+        </div>
+        <div class="services__cards">
+          <img src="" alt="">
+          <p>Suporte</p>
+        </div>
+        <div class="services__cards">
+          <img src="" alt="">
+          <p>Certificação</p>
+        </div>
+      </div>
+
+      <div class="banner__img">
+        <img src="./Assets/images/banner-img.png" alt="">
+      </div>
+
+    </div>
   </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <!-- sessão sobre a empresa -->
+  </section>
+
+  <section id="cursos" class="section">
+    <!-- sessão de categorias dos cursos -->
+  </section>
+
+  <section id="precos" class="section">
+    <!-- sessão se preços de assinaturas -->
+  </section>
+
+  <section id="contacto" class="section">
+    <!-- sessão de contactos -->
+  </section>
+
+  </main>
+
+  <footer>
+    <!-- sessão de rodapé -->
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maxime ducimus voluptatem neque molestiae ut debitis
+    repellat dolor tenetur repellendus delectus accusantium sit aspernatur, placeat quidem obcaecati dolores natus
+    quasi!
+  </footer>
 </body>
 
 </html>

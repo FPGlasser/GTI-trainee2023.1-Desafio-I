@@ -1,2 +1,144 @@
-body{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+img{
+  display: block;
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #003F5D;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+
+.logo {
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  border-bottom: 1px solid #FFCC00;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 4px 16px;  
+}
+
+.nav-btns {
+  padding: 8px 16px;
+  border: 1px solid #FFCC00;
+  font-weight: 400;
+  color: #FFFFFF;
+  border-radius: 8px;
+}
+
+.nav-btns:nth-of-type(2) {
+  background-color: #FFCC00;
+}
+
+.nav-btns-mobile {
+  display: none;
+}
+
+.nav-btns-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 0px 16px;
+}
+
+
+input[type=checkbox] {
+  display: none;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+
+@media (max-width: 768px) {
+  .logo{
+    width: 100px;
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #003F5D;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    padding-top: 32px;
+  }
+
+  .menu li:hover {
+    transition: 0.3s ease;
+  }
+
+  .menu li+li {
+    margin-top: 12px;
+  }
+
+  .nav-btns-desktop {
+    display: none;
+  }
+
+  .nav-btns-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .nav-btns-mobile>a {
+    padding: 16px;
+  }
+
+  .nav-btn-container {
+    margin-top: 100px;
+  }
+
+  input[type=checkbox]:checked~.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
