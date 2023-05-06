@@ -439,6 +439,7 @@ input[type=checkbox] {
   padding-bottom: 30px;
 }
 
+
 .buttom-matricula{
   font-size: 16px;
   font-family: 'Inter', sans-serif;
@@ -475,4 +476,147 @@ input[type=checkbox] {
   background: white;
   color: black;
   box-shadow: white;
+}
+h1{
+  color: rgb(109, 209, 255);
+  text-align: center;
+}
+
+
+a{      
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+#bloco1{
+  display: flex;
+   flex-direction: row;
+  justify-content: center; /* centraliza verticalmente os itens */
+  text-align: center;
+  
+ }
+
+#adm{   
+ 
+ 
+  width: 360px; /* 3,5 cm em pixels a 16px por cm */
+  height: 180px; /* 1 cm em pixels a 16px por cm */
+  border-radius: 35px; 
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("Assets/images/adm-background-img.jpg");
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  Align-items: center;
+  
+   
+}
+#Tecnologia{
+  
+  width: 360px; /* 3,5 cm em pixels a 16px por cm */
+  height: 180px; /* 1 cm em pixels a 16px por cm */
+  border-radius: 35px; 
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("Assets/images/Tech-background-image.jpg");
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  Align-items: center;
+  
+}
+#artes{
+  width: 360px; /* 3,5 cm em pixels a 16px por cm */
+  height: 180px; /* 1 cm em pixels a 16px por cm */
+  border-radius: 35px; 
+ background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+ url("Assets/images/art-background-image.jpg");
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  Align-items: center;
+      
+ }
+#bloco2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+#cienciase{
+
+  width: 360px; /* 3,5 cm em pixels a 16px por cm */
+  height: 180px; /* 1 cm em pixels a 16px por cm */
+  border-radius: 35px; 
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("Assets/images/math-background-image.jpg");
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  Align-items: center;
+
+}
+#cienciasss{
+  width: 360px; /* 3,5 cm em pixels a 16px por cm */
+  height: 180px; /* 1 cm em pixels a 16px por cm */
+  border-radius: 35px; 
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("Assets/images/cienciassoc.jpg");
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  Align-items: center;
+}
+#culinaria{
+  width: 360px; /* 3,5 cm em pixels a 16px por cm */
+  height: 180px; /* 1 cm em pixels a 16px por cm */
+  border-radius: 35px; 
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("Assets/images/cook-background-image.jpg");
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  Align-items: center;
+}
+#bloco3{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+#esportes{
+
+  width: 360px; /* 3,5 cm em pixels a 16px por cm */
+  height: 180px; /* 1 cm em pixels a 16px por cm */
+  border-radius: 35px; 
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("Assets/images/sport-background-image.jpg");
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  Align-items: center;
+
+}
+#idiomas{
+  width: 360px; /* 3,5 cm em pixels a 16px por cm */
+  height: 180px; /* 1 cm em pixels a 16px por cm */
+  border-radius: 35px; 
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("Assets/images/Idioms-background-image.jpg");
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  Align-items: center;
+
+}
+#saude{
+  width: 360px; /* 3,5 cm em pixels a 16px por cm */
+  height: 180px; /* 1 cm em pixels a 16px por cm */
+  border-radius: 35px; 
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url("Assets/images/health-background-image.jpg");
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  Align-items: center;
+
 }
