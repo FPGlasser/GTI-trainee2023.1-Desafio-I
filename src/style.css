@@ -31,11 +31,23 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 1440px;
 }
 
 .navbar {
@@ -115,7 +127,7 @@ input[type=checkbox] {
 
 .hero-section {
   padding: 16px;
-  padding-top: 75px;
+  padding-top: 64px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -154,7 +166,7 @@ input[type=checkbox] {
   gap: 4rem;
 }
 
-.hero--buttons>.btn {
+.hero--buttons > .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,7 +226,7 @@ input[type=checkbox] {
   gap: 16px;
 }
 
-.metrics-card>.metrics-quant {
+.metrics-card > .metrics-quant {
   font-size: 3rem;
   font-weight: 700;
 }
@@ -227,7 +239,7 @@ input[type=checkbox] {
   gap: 16px;
 }
 
-.services-dispo>.services__cards {
+.services-dispo > .services__cards {
   height: 150px;
   box-shadow: 5px 5px 2px;
   box-shadow: -5px -5px 2px;
@@ -251,6 +263,86 @@ input[type=checkbox] {
   justify-content: center;
   width: 100%;
   text-align: center;
+}
+
+.prices-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.prices-card{
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #FFFFFF;
+  box-shadow: -1px 3px 14px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px 3px 14px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 3px 14px 0px rgba(0,0,0,0.75);
+  border-radius: 16px;
+}
+.prices-card__title{
+  text-align: center;
+  font-weight: 600;
+  color: #003F5D;
+  
+}
+
+.overviews{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overview-card{
+  max-width: 1200px;
+  min-height: 120px;
+  background-color: #FFFFFF;
+  box-shadow: -1px 3px 14px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px 3px 14px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 3px 14px 0px rgba(0,0,0,0.75);
+  padding: 32px;
+  border-radius: 24px;
+}
+
+.overview-text-comment{
+  text-align: justify;
+}
+
+.overview-text-cotes{
+  font-size: 48px;
+}
+
+.cote-left{
+  text-align: end;
+}
+
+.overview-id{
+  text-align: center;
+}
+
+.overview-id > .overview-id-name{
+  font-weight: 600;
+}
+
+.overview-id > .overview-id-position{
+  font-size: 14px;
+}
+
+.overview-arrows-btn{
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.overview-arrows-btn > img{
+  width: 32px;
+  box-shadow: -1px 3px 14px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px 3px 14px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 3px 14px 0px rgba(0,0,0,0.75);
+  border-radius: 50%;
 }
 
 @media (max-width: 820px) {
@@ -301,13 +393,21 @@ input[type=checkbox] {
   }
 
   .hero-section {
-    margin-top: 50px;
+    margin-top: 24px;
   }
 
   .hero__services {
     display: flex;
     flex-direction: column-reverse;
     padding: 16px;
+  }
+
+  .hero__container1 > .hero__texts{
+    padding-top: 0px;
+  }
+
+  .hero__texts>.hero--title{
+    font-size: 2rem;
   }
 
   .metrics-quant{
@@ -329,6 +429,28 @@ input[type=checkbox] {
 }
 
 @media screen and (max-width: 600px){
+  
+  .hero__texts>.hero--title{
+    font-size: 1.5rem;
+  }
+
+  .hero__texts > .hero--description {
+    font-size: 1rem;
+  }
+
+  .hero--buttons{
+    gap: 2rem;
+  }
+
+  .hero--buttons > .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    
+  }
 
   .services-metrics, .services-dispo{
     width: 100%;
@@ -338,7 +460,9 @@ input[type=checkbox] {
   }
 
   .metrics-card{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     padding: 16px;
   }
+
+
 }
